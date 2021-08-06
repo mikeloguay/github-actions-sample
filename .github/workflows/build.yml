@@ -18,6 +18,6 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      run: dotnet build .\src\my-console\my-console.csproj
+      run: dotnet build ./src/my-console/my-console.csproj
     - name: Build
-      run: dotnet build .\src\my-console\my-console.csproj --no-restore
+      run: dotnet build ./src/my-console/my-console.csproj --no-restore
